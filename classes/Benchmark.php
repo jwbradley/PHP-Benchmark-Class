@@ -8,7 +8,7 @@ class Benchmark
 	
     public function elapsedTime()
     {
-        return $form->format_period((microtime(true))  - $this->start)
+        return $this->format_period((microtime(true))  - $this->start);
     }
     
     function format_period($seconds_input) {
