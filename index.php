@@ -4,11 +4,11 @@ require_once 'classes/Benchmark.php';
 
 $bench = new Benchmark();
 
-$bench->start();
 $x = 1;
 while ($x <= 100) {
     echo "hay i'm $x<br>";
+    echo "Iteration Run time {$bench->elapsedTime()}";
     $x++;
 }
-$bench->end();
-echo "elapse time {$bench->elapsedTime()}";
+
+echo "Total Run time {$bench->elapsedTime()}";
