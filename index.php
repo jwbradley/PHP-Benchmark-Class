@@ -6,8 +6,7 @@ $bench = new Benchmark();
 
 $x = 1;
 while ($x <= 100) {
-    echo "hay i'm $x<br>";
-    echo "Iteration Run time {$bench->elapsedTime()}";
+    echo "Iteration Run time for cycle {$x}: {$bench->elapsedTime()}<br />\n";
     $x++;
 }
 
