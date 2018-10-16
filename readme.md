@@ -7,5 +7,6 @@
  ```
  include(Benchmark.php);
  $runtime = new Benchmark();
+ sleep(15);
  echo "Total time to execute script: " .  $runtime->elapsedTime() ;
  ```
